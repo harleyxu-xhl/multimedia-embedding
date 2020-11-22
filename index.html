@@ -11,19 +11,16 @@
     <header>
       <h1>Mozilla</h1>
       <!-- 插入 <img> 元素，链接至较小的 Firefox 标志。 -->
-      <img src="images/firefoxlogo120.png"
+      <img src="images/firefoxlogo120.png">
 
     </header>
 
     <main>
       <article>
         <!-- 插入来自 Bilibili 的 <iframe> 元素 -->
-        <iframe src="https://player.bilibili.com/player.html?aid=3303261&bvid=BV1rs411d7hC&cid=5221343&page=2" 
+        <iframe width="400px" height="200px" src="https://player.bilibili.com/player.html?aid=3303261&bvid=BV1rs411d7hC&cid=5221343&page=2" 
         scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
         </iframe>
-        <!-- <iframe src="https://www.youtube.com/embed/KybOLQwOKn0" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe> -->
 
         <h2>自由网络 尽情驰骋</h2>
 
@@ -35,16 +32,28 @@
       <div class="further-info">
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
-          <img>
+            <img srcset="images/firefoxlogo120.png 120w,
+                        images/firefoxlogo400.png 400w"
+                sizes="(max-width:480px) 110px,
+                        400px"
+                src="images/firefoxlogo400.png" alt="this is firefox logo">           
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+            <img srcset="images/mozilladinosaurhead120.png 120w,
+                        images/mozilladinosaurhead400.png 400w"
+                sizes="(max-width:480px) 110px,
+                        400px"
+                src="images/mozilladinosaurhead400.png" alt="this is firefox logo">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+            <img srcset="images/firefoxaddons120.jpg 120w,
+            images/firefoxaddons400.jpg 400w"
+                sizes="(max-width:480px) 110px,
+                        400px"
+                src="images/firefoxaddons400.jpg" alt="this is firefox logo">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
-          <img>
+            <img src="images/mdn.svg" alt="this is firefox logo">
         </a>
         <div class="clearfix"></div>
       </div>
@@ -54,7 +63,7 @@
         <picture>
             <source media="(max-width:600px)" srcset="images/redpanda600.jpg">
             <source media="(min-width:601px)" srcset="images/redpanda1200.jpg">
-            <img src="images/redpanda1200.jpg"
+            <img src="images/redpanda1200.jpg" alt="a cute red panda">
         </picture>
       </div>
 
